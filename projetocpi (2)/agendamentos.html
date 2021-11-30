@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Agendamentos de mesas</title>
+        <meta charset="utf-8" />
+        <meta name="author" content=" Pedro Paulo" />
+        <meta name="keywords" content="Comida boa, Fast Good Food" />
+        <link rel="stylesheet" type ="text/css" href="estilo.css" />
+    </head>
+    <body>
+        <header>
+            <img src=" img/banner.jpg" alt="banner fast good food"/>
+        </header>
+                <nav>
+                    <a class ="a-menu" href="index.html"> HOME</a>
+                    <a class ="a-menu" href="agendamentos.html"> Agendar mesa</a>
+                    <a class ="a-menu" href="index.html#pag-mais vendidos"> Mais vendidos</a>
+                    <a class ="a-menu" href="index.html#pag-Veja como é feito"> Veja como é feito</a>
+                </nav>
+           
+            <section id="pag-agendamentos">
+                    
+                    <h1>Fast Good Food</h1>
+                    
+                    
+                        <p>No seu primeiro agendamento você ganha 10% de desconto!</p>
+        
+                    <form name="" method="" action="">
+                        <label for="nome">Nome:</label>
+                        <input id="nome" type="text" name="nome_completo"  placeholder="Digite seu nome completo" required />
+                        
+                        <label for="senha">Senha:</label>
+                        <input id="senha" type="password" name="senha"  placeholder="Digite sua senha" required />
+
+                        <label for="celular">Celular:</label>
+                        <input id="celular" type="tel" name="senha"  placeholder="(99)99999-9999" pattern=“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$” required/> 
+
+                    
+                        <label for="email">E-mail:</label>
+                    <input id="email" type="email" name="email"  placeholder="nomeusuario@email.com"/> 
+                    
+                    <div id="data-hora-num">
+                        <div>
+                            <label for="data">Data:</label>
+                            <input id="data" type="date" name="data" /> 
+                        </div>
+
+                        <div>
+                            <label>Hora:</label>
+                            <input id="hora" type="time" name="hora" /> 
+                        </div>
+
+                        <div>
+                            <label>Mesas:</label>
+                            <input id="mesas" type="number" name="mesas" min="1" max="5" step="1"/>
+                        </div>
+
+                    </div>
+
+                    <label for="pessoas">Nível:</label>
+                    <select id="pessoas" name="pessoas">
+                            <option value="uma">Uma pessoa</option>
+                            <option value="duas">Duas pessoas</option>
+                            <option value="quatro">Quatro pessoas</option>
+                            <option value="maisde">Mais de seis pessoas(Máximo 15 pessoas)</option>
+
+                        </select>
+
+                        <fieldset>
+                            <legend>Tipo de comida</legend>
+                            <input id="bra" type="radio" name="tipo de comida" value="bra" /> <label for="bra">Brasileira</label><br>
+                            <input id="ext" type="radio" name="tipo de comida" value="ext" /> <label for="ext">Extrangeira</label>
+                        </fieldset>
+                    
+                        <fieldset>
+
+                            <legend>Bebidas</legend>
+                            <input id="suc" type="checkbox" name="bebidas" value="suco" /> <label for="suco">Suco</label><br>
+                            <input id="ref" type="checkbox" name="bebidas" value="refrigerante" /> <label for="ref">Refrigerante</label><br>
+                            <input id="alc" type="checkbox" name="bebidas" value="alcoólica" /> <label for="alc">Alcoólica</label><br>
+                            <input id="agu" type="checkbox" name="bebidas" value="água" /> <label for="agu">Água</label><br>
+
+                        </fieldset>
+
+                        <label for="msg">Mensagem:</label>
+                        <textarea id="msg" cols="53" rows="4">
+                            
+                        </textarea>
+
+
+                <div id="botoes">
+                    
+                    <input type="submit" name="btn-agendar" value=AGENDAR />
+                    <input type="reset" name="btn-cancelar" value=CANCELAR />
+                
+                </div>
+
+                    </form>
+                    
+                    
+                
+            </section>
+                <footer>
+                
+                    <p >Deselvolvido por <a href ="https://instagram.com/leomessi" target="_blank">Pedro Martins</a> - 2021</p>
+                    
+                    
+                </footer>
+                
+                
+            </body>
+
+     </html>

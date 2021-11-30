@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cheese Bread</title>
+        <meta charset="utf-8" />
+        <meta name="author" content=" Pedro Paulo" />
+        <meta name="keywords" content="Pão de queijo" />
+        <link rel="stylesheet" type ="text/css" href="estiloos.css" />
+    </head>
+    <body id="corpaum">
+ 
+    <header id="trio">
+        <img src=" img/banner.png" alt="banner cheesebread"/>
+    </header>      
+    
+            <nav>  
+                <a class ="a-menu" href= "site.html"> HOME</a>
+                <a class ="a-menu" href= "site.html#texto"> Sobre </a>
+                <a class ="a-menu" href= "#agendamentos.html"> Agendamentos</a>
+            </nav>  
+            <section id="branco">
+            <h1 id="agen">Agendamentos</h1>
+
+
+            <p id="mini">Faça seu agendamento aqui!</p>
+
+            <form name="" method="" action="">
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome_completo"  placeholder="Digite seu nome completo" required />
+
+                <label for="celular">Celular:</label>
+                <input id="celular" type="tel" name="senha"  placeholder="(99)99999-9999" pattern=“^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$” required/> 
+
+            
+                <label for="email">E-mail:</label>
+            <input id="email" type="email" name="email"  placeholder="nomeusuario@email.com"/> 
+            
+            <div id="data-hora-num">
+                <div>
+                    <label for="data">Data:</label>
+                    <input id="data" type="date" name="data" /> 
+                </div>
+
+                <div>
+                    <label>Hora:</label>
+                    <input id="hora" type="time" name="hora" /> 
+                </div>
+
+                <div>
+                    <label>Mesas:</label>
+                    <input id="mesas" type="number" name="mesas" min="1" max="5" step="1"/>
+                </div>
+
+            </div>
+
+
+
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" cols="53" rows="4">
+                    
+                </textarea>
+
+
+        <div id="botoes">
+            
+            <input type="submit" name="btn-agendar" value=AGENDAR />
+            <input type="reset" name="btn-cancelar" value=CANCELAR />
+        
+        </div>
+
+            </form>
+            
+            
+        
+    </section>
+        <footer>
+        
+            <p >Deselvolvido por <a href ="https://instagram.com/leomessi" target="_blank">Pedro Martins</a> - 2021</p>
+            
+            
+        </footer>
+        
+        
+    </body>
+
+</html>

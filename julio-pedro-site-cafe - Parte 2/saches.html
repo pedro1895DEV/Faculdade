@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/cup-of-coffee.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/sitecafe_p1.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/liberation-serif" type="text/css"/>
+    <title>Sachês</title>
+</head>
+<body>
+    <header>
+        <img src="/img/Logo_Pequeno.png" alt="Logo Café Expresso" class="imgLogo">
+        <address class="ender">
+            Avenida Mochaccino, 10
+            Tel: (21)1234-5678
+            contato@coffe.com.br
+        </address>    
+    </header>
+    <nav>     
+        <ul>
+            <li><a href="/index.html">Inicial</a></li>
+            <li><a href="/historia.html">História</a></li>
+            <li><a href="/maquinas.html">Máquinas</a></li>
+            <li><a href="/saches.html">Sachês</a></li>
+            <li><a href="/compras.html">Compras</a></li>
+        </ul>   
+    </nav>
+    <section>
+        <h2>Sachês de Café Expresso</h2>
+        <ol>
+            <li>
+                <div onclick="abrirDolce()" style="width: 85px; cursor: pointer; margin-bottom: 18px;">Dolce Gusto</div> 
+                <div id="dolcegusto" class="sache-display">
+                    <h3>Dolce Gusto</h3>
+                    <h4>Caixa 16 cápsulas</h4>
+                    <div class="carrossel">
+                        <div class="container" id="img-dolce">
+                            <img src="/img/CapsulaDulceGusto.jpg" alt="Cápsula Expresso">
+                            <img src="/img/CapsulaDulceGustoDescafeinado.jpg" alt="Cápsula Descafeinado">
+                        </div>
+                    </div>
+                    <ul>
+                        <li style="margin-top: 18px;">Expresso 96g - R$ 24,00</li>
+                        <li>Descafeinado 96g - R$21,00</li>
+                    </ul>
+                    <button onclick="fecharDolce()" style="margin-top: 18px; margin-right: 40px;">Fechar</button>
+                </div>
+            </li>
+            <li>
+                <div onclick="abrirSenseo()" style="width: 70px; cursor: pointer; margin-bottom: 18px;">Senseo</div> 
+                <div id="senseo" class="sache-display">
+                    <h3>Senseo</h3>
+                    <h4>Pacote 18 sachês</h4>
+                    <div class="carrossel">
+                        <div class="container" id="img-senseo">
+                            <img src="/img/Senseo_Classico.jpg" alt="Sachê Clássico">
+                            <img src="/img/SenseoIntenso.jpg" alt="Sachê Intenso">
+                        </div>
+                    </div>
+                    <ul>
+                        <li style="margin-top: 18px;">Clássico 120g - R$14,00</li>
+                        <li>Intenso 120g - R$14,00</li>
+                    </ul>
+                    <button onclick="fecharSenseo()" style="margin-top: 18px; margin-right: 40px;">Fechar</button>
+                </div>       
+            </li>
+            <li>
+                <div onclick="abrirNespresso()" style="width: 80px; cursor: pointer; margin-bottom: 18px;">Nespresso</div> 
+                <div id="nespresso" class="sache-display">
+                    <h3>Nespresso</h3>
+                    <h4>Caixa 20 cápsulas</h4>
+                    <div class="carrossel">
+                        <div class="container" id="img-nespresso">
+                            <img src="/img/NespressoLivanto.png" alt="Livanto">
+                            <img src="/img/NespressoRistretto.png" alt="Ristretto">
+                            <img src="/img/NespressoVanilio.png" alt="Vanilio">
+                        </div>
+                    </div>
+                    <ul>
+                        <li style="margin-top: 18px;">Livanto - R$ 35,00</li>
+                        <li>Ristretto - R$42,00</li>
+                        <li>Vanilio - R$46,00</li>
+                    </ul>
+                    <button onclick="fecharNespresso()" style="margin-top: 18px; margin-right: 40px;">Fechar</button>
+                </div>
+            </li>
+        </ol>
+    </section>
+    <script src="/js/saches.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/cup-of-coffee.svg" type="image/x-icon">
+        <link rel="stylesheet" href="/css/sitecafe_p1.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/liberation-serif" type="text/css"/>
+        <title>Compras</title>
+    </head>
+    <body>
+        <header>
+            <img src="/img/Logo_Pequeno.png" alt="Logo Café Expresso" class="imgLogo">
+            <address class="ender">
+                Avenida Mochaccino, 10
+                Tel: (21)1234-5678
+                contato@coffe.com.br
+            </address>    
+        </header>
+        <nav>    
+            <ul>
+                <li><a href="/index.html">Inicial</a></li>
+                <li><a href="/historia.html">História</a></li>
+                <li><a href="/maquinas.html">Máquinas</a></li>
+                <li><a href="/saches.html">Sachês</a></li>
+                <li><a href="/compras.html">Compras</a></li>
+            </ul>   
+        </nav>
+        <section>
+            <form action="">
+                <fieldset class="fsForm">      
+                    <legend>Dados de Identificação</legend>
+                    <div class="boxFieldset">
+                        <label for="user_name" style="margin-right: 30px;">Nome:</label>
+                        <input id="user_name" type="text" name="user_name" style="width: 200px;">
+
+                        <label for="CPF" style="margin-right: 35px; margin-left: 26px;">CPF:</label>
+                        <input id="CPF" type="text" name="CPF" style="width: 120px;" maxlength="11" pattern="[0-9]{11}" onblur="validarCPF()">
+                    </div>  
+                    <div class="boxFieldset">
+                        <label for="telefone" style="margin-right: 13px;">Telefone:</label>
+                        <input id="telefone" type="tel" name="telefone" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" maxlength="14" style="width: 120px;">
+                                            
+                        <label for="E-mail" style="margin-left: 25px; margin-right: 18px;">E-mail:</label><br>
+                        <input id="E-mail" type="email" name="e-mail" style="width: 200px;"/>
+                    </div>  
+                    <div class="_boxFieldset"> 
+                        <label for="ender" style="margin-right: 4px;">Endereço:</label>
+                        <input id="ender" type="text" name="ender" style="width: 420px;">
+                    </div>
+                </fieldset>
+                <fieldset class="fsResEsq">
+                    <legend>Produtos</legend>
+                    <div class="boxFieldsetProd">
+                        <div class="selectSt">
+                            <label for="maquinas" style="margin-right: 28px;">Máquinas:</label>
+                            <select name="maquinas" id="maquinas">
+                                <option value="">---</option>
+                                <optgroup label="Dolce Gusto">
+                                    <option value="340">Piccolo</option>
+                                </optgroup>
+                                <optgroup label="Nespresso">
+                                    <option value="300">Inissia C40</option>
+                                    <option value="400">U C50</option>
+                                </optgroup>
+                                <optgroup label="Senseo">
+                                    <option value="230">HD7811/96</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <div class="selectSt">
+                            <label for="saches" style="margin-right: 32px;">Sachês:</label>
+                            <select name="saches" id="saches">
+                                <option value="">---</option>
+                                <optgroup label="Dolce Gusto">
+                                    <option value="24">Expresso</option> 
+                                    <option value="21">Descafeinado</option> 
+                                </optgroup>
+                                <optgroup label="Nespresso">
+                                    <option value="35">Livanto</option>
+                                    <option value="42">Ristretto</option>
+                                    <option value="46">Vanilio</option>
+                                </optgroup>
+                                <optgroup label="Senseo">
+                                    <option value="14">Clássico</option>
+                                    <option value="14">Intenso</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <label for="selecionados">Selecionados:</label>
+                        <input type="button" value="Remover" onclick="remover()" style="margin-left: 42px;">
+                        <textarea name="selecionados" readonly id="selecionados"></textarea>
+                        <label for="valor" style="margin-right: 41px;">Valor (R$):</label>
+                        <input id="valor" type="text" name="valor" readonly style="width: 80px;">
+                    </div>
+                </fieldset>
+                <fieldset class="fsResDir">
+                    <legend>Forma de Pagamento</legend>
+                    <div class="boxFieldsetForma">
+                        <input type="radio" name="forma" id="cartao" style="margin-right: 7px;"><label for="cartao">Cartão</label> 
+                        <input type="radio" name="forma" id="cheque" style="margin-right: 7px;"><label for="cheque">Cheque</label>
+                        <input type="radio" name="forma" id="dinheiro" style="margin-right: 7px;"><label for="dinheiro">Dinheiro</label>
+                        <fieldset style="padding-top: 20px; margin-top: 30px;">
+                            <legend>Dados do cartão</legend>
+                            <input type="radio" name="cartao" id="visa" style="margin-right: 7px;"><label for="visa"><img src="/img/visa.png" alt="Bandeira Visa"></label>
+                            <input type="radio" name="cartao" id="master" style="margin-right: 7px;"><label for="master"><img src="/img/master.png" alt="Bandeira MasterCard"></label>
+                            <input type="radio" name="cartao" id="american" style="margin-right: 7px;"><label for="american"><img src="/img/amex.png" alt="Bandeira American Express"></label>
+                            <div style="margin-top: 18px; margin-bottom: 18px;">
+                                <label for="validade" style="margin-right: 3px;">Validade:</label>
+                                <input id="validade" name="validade" type="text" style="width: 22px;"> / <input id="validade" name="validade" type="text" style="width: 44px;">
+                            </div>
+                            <label for="numerocartao" style="margin-right: 5px;">Número:</label>
+                            <input id="numerocartao" name="numerocartao" type="text" onkeyup="bandeira()" style="width: 120px;">
+                        </fieldset>
+                    </div>
+                </fieldset>
+                <div class="boxbtn">
+                    <input type="reset" name="btn-limpar" value=Limpar class="botao"/>
+                    <input type="submit" name="btn-enviar" value=Enviar class="botao"/>
+                </div>        
+            </form>  
+        </section>
+        <script src="/js/compras.js"></script>
+    </body>
+</html>

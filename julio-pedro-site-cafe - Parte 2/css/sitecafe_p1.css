@@ -1,0 +1,236 @@
+body {
+    background-image: url('/img/Fundo.jpg');
+    color: #FFEEBB;
+    font-family: LiberationSerifRegular;
+    font-size: 16px;
+}
+
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+
+.imgLogo {
+    border-bottom: solid 3px;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+.ender {
+    width: 180px;
+    font-size: 16px;
+    text-align: right;
+    float: right;
+    
+}
+
+section {
+    display: block;
+    width: 77%;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #FFEEBB;
+}
+
+ul {
+    line-height: 200%;
+}
+
+nav ul {
+    color: #FFEEBB;
+    list-style-type: circle;
+    margin-top: 30px;
+}
+
+
+/* Página Inicial */
+
+.apres {
+    align-self: center;
+}
+
+
+/*Página História*/
+
+.historia {
+    text-align: justify; 
+}
+
+#hist{
+   display:flex;
+}
+
+.fonte {
+    text-align: right;
+    font-style: italic;
+}
+
+.imgdir {
+    margin: var(12px 0px 4px 12px);
+    float: right;
+    margin-left: 12px;
+    margin-top:12px;
+    margin-bottom:4px;
+}
+
+.imgesq {
+    margin: var(12px 12px 4px 0px);
+    float: left;
+    margin-right: 12px;
+    margin-top:12px;
+    margin-bottom:4px;
+}
+
+
+/*Página Sachês*/
+
+.sache-display {
+    display: none;
+    width: 280px;
+    height: 430px;
+    text-align: center;
+}
+
+.sache-display-active {
+    display: block;
+    width: 280px;
+    height: 430px;
+    text-align: center;
+}
+
+.sache-display li {
+    text-align: justify;
+}
+
+.carrossel {
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    margin-left: 50px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.container img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+/*Página Máquinas*/
+
+.tabInfo {
+    border: solid;
+    border-collapse: collapse;
+    margin-top: 6px;
+    background-color: #FFFFFF;
+    color: #573218;
+    font-family: Arial;
+    font-family: Ubuntu;
+}
+
+td, th {
+    border: 2px solid #664422;
+    padding: var(6px, 12px, 6px, 12px);
+}
+
+.linTH {
+    color: #FFFFFF;
+    background-color: #907968;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.colTH {
+    color: #573218;
+    background-color: #EACEAC;
+    text-align: left;
+}
+
+.preco {
+    color: #CC0000;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+/*Página Compras*/
+
+form {
+    float: right;
+}
+
+fieldset {
+    background-color: #907968;
+}
+
+.fsForm {
+    align-items: center;
+    width: 524px;
+    clear: both;
+}
+
+.fsResEsq {
+    width: 200px;
+    height: 280px;
+    float: left;
+}
+
+.fsResDir {
+    width: 280px;
+    height: 280px;
+    float: right;
+}
+
+.boxFieldset {
+    display: flex;
+    margin-top: 18px;
+}
+
+._boxFieldset {
+    margin-top: 18px;
+    padding-bottom: 3px;
+}
+
+.boxFieldsetProd {
+    margin-top: 18px;
+}
+
+.boxFieldsetForma {
+    margin-top: 15px;
+}
+
+.selectSt {
+    padding-bottom: 12px;
+}
+
+button {
+    margin-left: 43px;
+}
+
+textarea {
+    width: 200px;
+    height: 80px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.botao {
+    margin-right: 5px;
+    margin-top: 15px;
+    float: right;
+}

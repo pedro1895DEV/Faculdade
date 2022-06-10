@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/cup-of-coffee.svg" type="image/x-icon">
+        <link rel="stylesheet" href="/css/sitecafe_p1.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/liberation-serif" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+        <title>Máquinas</title>
+    </head>
+    <body>
+        <header>
+            <img src="/img/Logo_Pequeno.png" alt="Logo Café Expresso" class="imgLogo">
+            <address class="ender">
+                Avenida Mochaccino, 10
+                Tel: (21)1234-5678
+                contato@coffe.com.br
+            </address>    
+        </header>
+        <nav>    
+            <ul>
+                <li><a href="/index.html">Inicial</a></li>
+                <li><a href="/historia.html">História</a></li>
+                <li><a href="/maquinas.html">Máquinas</a></li>
+                <li><a href="/saches.html">Sachês</a></li>
+                <li><a href="/compras.html">Compras</a></li>
+            </ul>   
+        </nav>
+    <section>
+        <table class="tabInfo">
+            <tr>
+                <th class="linTH" colspan ="4">Máquinas de Café</th>
+            </tr>
+            <tr>
+                <th class="linTH">Tipo</th>
+                <th class="linTH">Modelo</th>
+                <th class="linTH">Foto</th>
+                <th class="linTH">Preço</th>
+            </tr>
+            <tr>
+                <th class="colTH">Dolce Gusto</th>
+                <td class="colTH"><div style="cursor: pointer;" onclick="abrirPiccolo()">Piccolo</div></td>
+                <td rowspan="4" id="img-td"></td>
+                <td class="preco" id="preco-td" rowspan ="4"></td>
+            </tr>
+            <tr>
+                <th class="colTH" rowspan="2">
+                    Nespresso
+                    <td class="colTH"><div style="cursor: pointer;" onclick="abrirInissia()">Inissia C40</div></td>
+                    <tr>
+                        <td class="colTH"><div style="cursor: pointer;" onclick="abrirUC()">U C50</div></td>
+                    </tr>
+                </th>      
+            </tr>  
+            <tr>
+                <th class="colTH">Senseo</th>
+                <td class="colTH"><div style="cursor: pointer;" onclick="abrirHD()">HD7811/96</div></td>
+            </tr>
+        </table>
+    </section>
+    <script src="/js/maquinas.js"></script>
+</body>
+</html>
